@@ -4,7 +4,9 @@
   <folder name="Business" id="id-7cf011e66d37427cabaee212d2075255" type="business"/>
   <folder name="Application" id="id-d5b7e109b45c4c478eb8b9ac30720e31" type="application"/>
   <folder name="Technology &amp; Physical" id="id-9aad3dacbe8e4af69205a9fb9387b3b8" type="technology"/>
-  <folder name="Motivation" id="id-6f931f49446b42d3aa18abb40ca0ae87" type="motivation"/>
+  <folder name="Motivation" id="id-6f931f49446b42d3aa18abb40ca0ae87" type="motivation">
+    <element xsi:type="archimate:Stakeholder" name="Stakeholder" id="id-72a3e0e85ae34dcaa7e36e4b58f81564"/>
+  </folder>
   <folder name="Implementation &amp; Migration" id="id-31bce988b36e4e12939b9bca9ebc4bc8" type="implementation_migration"/>
   <folder name="Other" id="id-e1ca962fdd964d1e8f895c1b6a913db0" type="other"/>
   <folder name="Relations" id="id-fbe04cbe85e14164b469c637d16aa759" type="relations"/>
@@ -32,6 +34,9 @@
     </folder>
     <folder name="_Viewpoint models" id="id-45e48c0f16e84fab8d74f6d124c78ecc">
       <element xsi:type="archimate:ArchimateDiagramModel" name="V0x-01 Stakeholders Viewpoint" id="id-2367e123d5d74dc0a6a510e352a5ceda" viewpoint="stakeholder">
+        <child xsi:type="archimate:DiagramObject" id="id-3158cdbb9a92474aaec8dfc6144c132f" archimateElement="id-72a3e0e85ae34dcaa7e36e4b58f81564">
+          <bounds x="293" y="152" width="120" height="55"/>
+        </child>
         <documentation>Considers the impact or perception of the organization's different stakeholders.</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="V0x-02 Temporal Viewpoint" id="id-0419ed7c2d9749bbbd5abb00aa1b5281" viewpoint="project">
