@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:archimate="http://www.archimatetool.com/archimate" name="ITGA ODS Carto" id="id-80886ac3e0304654bd2bb10a0259e254" version="5.0.0">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="ITGA ODS Carto" id="id-80886ac3e0304654bd2bb10a0259e254" version="5.0.0">
   <folder name="Strategy" id="id-8f7fa259652647b086714d8f92b0d1a1" type="strategy"/>
-  <folder name="Business" id="id-7cf011e66d37427cabaee212d2075255" type="business"/>
+  <folder name="Business" id="id-7cf011e66d37427cabaee212d2075255" type="business">
+    <element xsi:type="archimate:BusinessActor" name="Business Actor 01" id="id-bf675a8e9c6242a7bb7c41cd25e71a0e"/>
+    <element xsi:type="archimate:BusinessRole" name="Business Role 01" id="id-26b7afddc44f4958ae6ca04fa6d9f553"/>
+  </folder>
   <folder name="Application" id="id-d5b7e109b45c4c478eb8b9ac30720e31" type="application"/>
   <folder name="Technology &amp; Physical" id="id-9aad3dacbe8e4af69205a9fb9387b3b8" type="technology"/>
   <folder name="Motivation" id="id-6f931f49446b42d3aa18abb40ca0ae87" type="motivation"/>
   <folder name="Implementation &amp; Migration" id="id-31bce988b36e4e12939b9bca9ebc4bc8" type="implementation_migration"/>
   <folder name="Other" id="id-e1ca962fdd964d1e8f895c1b6a913db0" type="other"/>
-  <folder name="Relations" id="id-fbe04cbe85e14164b469c637d16aa759" type="relations"/>
-  <folder name="Views" id="id-028944078f2a4985b76e4f437a0b08dd" type="diagrams"/>
+  <folder name="Relations" id="id-fbe04cbe85e14164b469c637d16aa759" type="relations">
+    <element xsi:type="archimate:AssignmentRelationship" id="id-fee2a6b8a7bf40dab5fd8b4c5ea668cd" source="id-bf675a8e9c6242a7bb7c41cd25e71a0e" target="id-26b7afddc44f4958ae6ca04fa6d9f553"/>
+  </folder>
+  <folder name="Views" id="id-028944078f2a4985b76e4f437a0b08dd" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="View 01" id="id-f7bb4a46cb53462cb33399bb270af24d" viewpoint="business_process_cooperation">
+      <child xsi:type="archimate:DiagramObject" id="id-a4ce114b2c61497092f0f66340ae444b" archimateElement="id-bf675a8e9c6242a7bb7c41cd25e71a0e">
+        <bounds x="336" y="216" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-478c8d8f865f4cac94e38d8b81621513" source="id-a4ce114b2c61497092f0f66340ae444b" target="id-25ddb979eba345ae9a2e03b41637e17c" archimateRelationship="id-fee2a6b8a7bf40dab5fd8b4c5ea668cd"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-25ddb979eba345ae9a2e03b41637e17c" targetConnections="id-478c8d8f865f4cac94e38d8b81621513" archimateElement="id-26b7afddc44f4958ae6ca04fa6d9f553">
+        <bounds x="336" y="348" width="120" height="55"/>
+      </child>
+    </element>
+  </folder>
 </archimate:model>
