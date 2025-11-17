@@ -1,63 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="ITGA ODS Carto" id="id-80886ac3e0304654bd2bb10a0259e254" version="5.0.0">
+<archimate:model xmlns:archimate="http://www.archimatetool.com/archimate" name="ITGA ODS Carto" id="id-80886ac3e0304654bd2bb10a0259e254" version="5.0.0">
   <folder name="Strategy" id="id-8f7fa259652647b086714d8f92b0d1a1" type="strategy"/>
   <folder name="Business" id="id-7cf011e66d37427cabaee212d2075255" type="business"/>
   <folder name="Application" id="id-d5b7e109b45c4c478eb8b9ac30720e31" type="application"/>
   <folder name="Technology &amp; Physical" id="id-9aad3dacbe8e4af69205a9fb9387b3b8" type="technology"/>
-  <folder name="Motivation" id="id-6f931f49446b42d3aa18abb40ca0ae87" type="motivation">
-    <element xsi:type="archimate:Stakeholder" name="Stakeholder" id="id-72a3e0e85ae34dcaa7e36e4b58f81564"/>
-    <element xsi:type="archimate:Stakeholder" name="Stakeholder" id="id-ac6edcf3f182407995700017b3193382"/>
-  </folder>
+  <folder name="Motivation" id="id-6f931f49446b42d3aa18abb40ca0ae87" type="motivation"/>
   <folder name="Implementation &amp; Migration" id="id-31bce988b36e4e12939b9bca9ebc4bc8" type="implementation_migration"/>
   <folder name="Other" id="id-e1ca962fdd964d1e8f895c1b6a913db0" type="other"/>
-  <folder name="Relations" id="id-fbe04cbe85e14164b469c637d16aa759" type="relations">
-    <element xsi:type="archimate:AssociationRelationship" id="id-806b9c452fce4421a16877ab6abf37a9" source="id-72a3e0e85ae34dcaa7e36e4b58f81564" target="id-ac6edcf3f182407995700017b3193382"/>
-  </folder>
-  <folder name="Views" id="id-028944078f2a4985b76e4f437a0b08dd" type="diagrams">
-    <folder name="V04 Business Capabilities View" id="id-aebfac5b43c54067a0921884b8eed2df">
-      <documentation>It details the capabilities needed to achieve strategic objectives.</documentation>
-    </folder>
-    <folder name="V05 Strategic Alignment View" id="id-c4a02fa985844e63ba830cca6a4b81c1">
-      <documentation>It shows how strategic initiatives are aligned with different parts of the organization, including business processes and technologies.</documentation>
-    </folder>
-    <folder name="V01 View of Objectives and Goals" id="id-88302c3de0314b14bfc95a4d9d82fbb9">
-      <documentation>It describes the long-term objectives and strategic goals of the organization.</documentation>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="V01-01 Stakeholders Viewpoint" id="id-ba340387364b4ed1b09bed1a3468f278" viewpoint="stakeholder">
-        <documentation>Considers the impact or perception of the organization's different stakeholders.</documentation>
-      </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="V01-01 Organization Viewpoint" id="id-6456ac8a18364d158e85e0b5dc004581" viewpoint="organization">
-        <documentation>Considers the impact or perception of the organization's different stakeholders.</documentation>
-      </element>
-    </folder>
-    <folder name="V02 View of the Principles of Architecture" id="id-e32bb8955d1e467cb860dcc005df9529">
-      <documentation>This view includes the guiding principles that shape architectural decision-making within the enterprise.</documentation>
-    </folder>
-    <folder name="V03 View of the Strategic Mapping" id="id-07c54e705428460e9a8b457c5488dbc3">
-      <documentation>It shows how the different strategic objectives are linked and how they support each other.</documentation>
-    </folder>
-    <folder name="_Viewpoint models" id="id-45e48c0f16e84fab8d74f6d124c78ecc">
-      <element xsi:type="archimate:ArchimateDiagramModel" name="V0x-01 Stakeholders Viewpoint" id="id-2367e123d5d74dc0a6a510e352a5ceda" viewpoint="stakeholder">
-        <child xsi:type="archimate:DiagramObject" id="id-3158cdbb9a92474aaec8dfc6144c132f" archimateElement="id-72a3e0e85ae34dcaa7e36e4b58f81564">
-          <bounds x="293" y="152" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-45f3ae265e844a028bf43a5c900e0ca8" source="id-3158cdbb9a92474aaec8dfc6144c132f" target="id-cfe83108280149f2be57e3fa7f934624" archimateRelationship="id-806b9c452fce4421a16877ab6abf37a9"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-cfe83108280149f2be57e3fa7f934624" targetConnections="id-45f3ae265e844a028bf43a5c900e0ca8" archimateElement="id-ac6edcf3f182407995700017b3193382">
-          <bounds x="531" y="273" width="120" height="55"/>
-        </child>
-        <documentation>Considers the impact or perception of the organization's different stakeholders.</documentation>
-      </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="V0x-02 Temporal Viewpoint" id="id-0419ed7c2d9749bbbd5abb00aa1b5281" viewpoint="project">
-        <documentation>Examines the evolution of goals and capabilities over time.</documentation>
-      </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="V0x-03 Alignment Viewpoint" id="id-985293e76285453f9ae6f8dca8c77684" viewpoint="strategy">
-        <documentation>Assesses the alignment of strategic elements with the company's overall vision and objectives.</documentation>
-      </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="V0x-04 Resource Viewpoint" id="id-f23e68d00d2944b0a62e0154367254fc" viewpoint="resource">
-        <documentation>Focuses on the resources needed to achieve strategic objectives, including human, financial and technological resources.</documentation>
-      </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="V0x-05 Risks Perspective" id="id-f545619232374cc8b27fcfa729256439">
-        <documentation>Identifies and assesses risks associated with the achievement of strategic objectives and proposes mitigation strategies.</documentation>
-      </element>
-    </folder>
-  </folder>
+  <folder name="Relations" id="id-fbe04cbe85e14164b469c637d16aa759" type="relations"/>
+  <folder name="Views" id="id-028944078f2a4985b76e4f437a0b08dd" type="diagrams"/>
 </archimate:model>
