@@ -2,7 +2,9 @@
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="ITGA ODS Carto" id="id-80886ac3e0304654bd2bb10a0259e254" version="5.0.0">
   <folder name="Strategy" id="id-8f7fa259652647b086714d8f92b0d1a1" type="strategy"/>
   <folder name="Business" id="id-7cf011e66d37427cabaee212d2075255" type="business">
-    <element xsi:type="archimate:BusinessActor" name="Business Actor 01" id="id-bf675a8e9c6242a7bb7c41cd25e71a0e"/>
+    <folder name="BusinessType1" id="id-c70b364437804672aee70519149afbe3">
+      <element xsi:type="archimate:BusinessActor" name="Business Actor 01" id="id-bf675a8e9c6242a7bb7c41cd25e71a0e"/>
+    </folder>
     <element xsi:type="archimate:BusinessRole" name="Business Role 01" id="id-26b7afddc44f4958ae6ca04fa6d9f553"/>
     <element xsi:type="archimate:BusinessFunction" name="Business Function" id="id-031972d7999545a9878748aaacdcda86"/>
     <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-985a0cc72f40404dbea96704b5aa3c50"/>
@@ -17,15 +19,17 @@
     <element xsi:type="archimate:ServingRelationship" id="id-0c5d437287804404b864a2c425153c1c" source="id-031972d7999545a9878748aaacdcda86" target="id-985a0cc72f40404dbea96704b5aa3c50"/>
   </folder>
   <folder name="Views" id="id-028944078f2a4985b76e4f437a0b08dd" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="View 01" id="id-f7bb4a46cb53462cb33399bb270af24d" viewpoint="business_process_cooperation">
-      <child xsi:type="archimate:DiagramObject" id="id-a4ce114b2c61497092f0f66340ae444b" archimateElement="id-bf675a8e9c6242a7bb7c41cd25e71a0e">
-        <bounds x="336" y="216" width="120" height="55"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-478c8d8f865f4cac94e38d8b81621513" source="id-a4ce114b2c61497092f0f66340ae444b" target="id-25ddb979eba345ae9a2e03b41637e17c" archimateRelationship="id-fee2a6b8a7bf40dab5fd8b4c5ea668cd"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-25ddb979eba345ae9a2e03b41637e17c" targetConnections="id-478c8d8f865f4cac94e38d8b81621513" archimateElement="id-26b7afddc44f4958ae6ca04fa6d9f553">
-        <bounds x="336" y="348" width="120" height="55"/>
-      </child>
-    </element>
+    <folder name="ViewsType1" id="id-825a1e956cfd47ec976da2d5aa40c948">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="View 01" id="id-f7bb4a46cb53462cb33399bb270af24d" viewpoint="business_process_cooperation">
+        <child xsi:type="archimate:DiagramObject" id="id-a4ce114b2c61497092f0f66340ae444b" archimateElement="id-bf675a8e9c6242a7bb7c41cd25e71a0e">
+          <bounds x="336" y="216" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-478c8d8f865f4cac94e38d8b81621513" source="id-a4ce114b2c61497092f0f66340ae444b" target="id-25ddb979eba345ae9a2e03b41637e17c" archimateRelationship="id-fee2a6b8a7bf40dab5fd8b4c5ea668cd"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-25ddb979eba345ae9a2e03b41637e17c" targetConnections="id-478c8d8f865f4cac94e38d8b81621513" archimateElement="id-26b7afddc44f4958ae6ca04fa6d9f553">
+          <bounds x="336" y="348" width="120" height="55"/>
+        </child>
+      </element>
+    </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="View 02" id="id-14c842cb85af47629847b802274b1bd5">
       <child xsi:type="archimate:DiagramObject" id="id-f2d9690cdf45472dbd0d2049328082ec" archimateElement="id-031972d7999545a9878748aaacdcda86">
         <bounds x="231" y="294" width="120" height="55"/>
